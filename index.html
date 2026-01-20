@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Focus Timer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="badge">Daily Focus Timer</div>
+      <p class="subtext">25-minute focus sprints with a single-page timer.</p>
+    </header>
+
+    <section class="timer-card">
+      <div class="timer-display" aria-live="polite" aria-atomic="true">
+        <span id="minutes">25</span><span class="colon">:</span><span id="seconds">00</span>
+      </div>
+      <div class="status" id="status" aria-live="polite">Status: Stopped</div>
+      <div class="controls">
+        <button id="startBtn" class="control primary">Start</button>
+        <button id="stopBtn" class="control ghost">Stop</button>
+      </div>
+    </section>
+
+    <footer class="footnote">No sounds. No persistence. Just focus.</footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
