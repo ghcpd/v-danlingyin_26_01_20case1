@@ -1,0 +1,58 @@
+GPT-5.1-Codex-Max  ：：
+User: Prompt
+You are a frontend developer.
+
+Your task is to build a complete, runnable frontend application
+from scratch based strictly on the specification provided in input_ui_spec.txt.
+
+This is a UI Case evaluation focusing on:
+- Creating an app from scratch
+- Handling time-based logic
+- UI state synchronization
+- Delivering a working project (not mockups)
+
+General Requirements:
+- Any frontend stack is allowed
+- The project MUST run locally
+- You MUST generate source code and config files
+
+Responsibilities:
+1. Read input_ui_spec.txt carefully
+2. Generate a full frontend project
+3. Implement all features described
+4. Use in-memory state only
+5. Provide README.md with run instructions
+
+Strict Rules:
+- Do NOT output UI descriptions only
+- Do NOT skip configuration files
+- Do NOT invent extra features
+- Do NOT output partial code
+
+--------------------------------------------------------------------------------
+
+
+GitHub Copilot: Optimizing tool selection...
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.20/case1/GPT-5.1-Codex-Max/index.html)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.20/case1/GPT-5.1-Codex-Max/style.css)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.20/case1/GPT-5.1-Codex-Max/main.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.20/case1/GPT-5.1-Codex-Max/README.md)
+
+Built the Daily Focus Timer as a runnable static app with countdown logic and status sync.
+
+- Core UI and layout in index.html; typography via Space Grotesk and structured controls for timer, status, and buttons.
+- Styling in style.css with gradient background, card layout, responsive timer size, and button states.
+- Timer logic in main.js: 25:00 default, Start triggers 1s ticks, Stop resets to 25:00, auto-finish sets status to “Finished”, prevents double-start, keeps everything in memory.
+- Usage and run steps documented in README.md.
+
+Run locally:
+1) Double-click index.html to open in your browser, or
+2) From this folder run `npx serve .` and open the shown local URL.
+
+Natural next steps: optional favicon or light/dark toggle if you want a variant theme.
+
+Made changes.

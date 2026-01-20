@@ -1,0 +1,140 @@
+:root {
+  --bg: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.22), transparent 30%),
+         radial-gradient(circle at 80% 10%, rgba(16, 185, 129, 0.18), transparent 30%),
+         #0f172a;
+  --panel: #111827;
+  --accent: #22d3ee;
+  --accent-strong: #06b6d4;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  font-family: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  display: grid;
+  place-items: center;
+  padding: 32px;
+}
+
+.app-shell {
+  width: min(500px, 95vw);
+  display: grid;
+  gap: 16px;
+}
+
+.hero {
+  text-align: center;
+  display: grid;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.subtext {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.timer-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+}
+
+.timer-display {
+  font-size: 4rem;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.colon {
+  color: var(--accent);
+}
+
+.status {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.control {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.control:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.control:active {
+  transform: translateY(0);
+}
+
+.control:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  border: none;
+  color: #0b1224;
+  box-shadow: 0 16px 40px rgba(34, 211, 238, 0.35);
+}
+
+.ghost {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footnote {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .timer-display {
+    font-size: 3.2rem;
+  }
+}
