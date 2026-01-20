@@ -1,0 +1,17 @@
+App Name: Daily Focus Timer
+
+Features:
+- 25-minute focus timer
+- Start and Stop buttons
+- Timer countdown display (mm:ss)
+- Status indicator: Running / Stopped / Finished
+
+Behavior:
+- Timer decreases every second when running
+- Clicking Stop resets the timer
+- When timer reaches zero, status becomes "Finished"
+
+Constraints:
+- No sound effects
+- No persistence
+- Single page only
